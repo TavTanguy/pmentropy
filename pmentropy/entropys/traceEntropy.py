@@ -1,5 +1,5 @@
 import math
-from Node import Node
+from pmentropy.Node import Node
 
 def trace_entropy(logs: tuple[dict[Node], dict]) -> float:
     trie, trie_infos = logs

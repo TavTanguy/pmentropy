@@ -1,5 +1,5 @@
-from tools import for_key_in_trie
-from Node import Node
+from pmentropy.tools import for_key_in_trie
+from pmentropy.Node import Node
 import math
 import multiprocessing 
 

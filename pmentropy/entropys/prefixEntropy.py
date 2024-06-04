@@ -1,6 +1,6 @@
 import math
-from Node import Node
-from tools import for_key_in_trie
+from pmentropy.Node import Node
+from pmentropy.tools import for_key_in_trie
 
 def prefix_entropy(logs: tuple[dict[Node], dict]) -> float:
     trie, trie_infos = logs

@@ -1,4 +1,4 @@
-from Node import Node
+from pmentropy.Node import Node
 
 def unique_trace(logs: tuple[dict[Node], dict]):
     trie, trie_infos = logs
