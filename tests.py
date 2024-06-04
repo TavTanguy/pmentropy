@@ -1,4 +1,5 @@
 import pmentropy
+from pm4py.read import read_xes
 
 precision = 5
 
@@ -69,6 +70,16 @@ logs_all = logs + logs_flatten
 def test_read_file():
     for i, t in enumerate(logs_all):
         trie, trie_info = t
+        assert trie is not None
+        assert trie_info is not None
+        assert trie_info["longest_branch"] == values_test[i % len(files)]["longest_branch"]
+        assert len(trie_info["mapping"]) == values_test[i % len(files)]["len_mapping"]
+        assert list(map(lambda x: x.path, trie_info["end_nodes"])) == values_test[i % len(files)]["end_nodes"]
+
+def test_read_DataFrame():
+    for i, path in enumerate(files):
+        logs = read_xes(path)
+        trie, trie_info = pmentropy.read_DataFrame(logs)
         assert trie is not None
         assert trie_info is not None
         assert trie_info["longest_branch"] == values_test[i % len(files)]["longest_branch"]

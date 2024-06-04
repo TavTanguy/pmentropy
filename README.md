@@ -20,11 +20,37 @@ Then compute an entropy
     entropy1 = pmentropy.kNN_entropy(logs, k=3, p=2)
     entropy2 = pmentropy.global_block_entropy(logs k=3, p=2)
 
+### Import with pm4py
+
+with a DataFrame
+
+    import pmentropy
+    from pm4py.read import read_xes
+
+    df = read_xes("path")
+    logs = pmentropy.read_DataFrame(df, flatten=False)
+
+    entropy1 = pmentropy.kNN_entropy(logs, k=3, p=2)
+
+\
+trace by trace if you already read by stream
+
+    import pmentropy
+    from pm4py.streaming.importer.xes import importer as xes_importer
+
+    stream = xes_importer.apply("path", variant=xes_importer.xes_trace_stream)
+    next_trace, logs = pmentropy.read_trace_by_trace(flatten=False)
+    for trace in stream:
+        next_trace(trace)
+
+    entropy1 = pmentropy.kNN_entropy(logs, k=3, p=2)
+
 ## Documentation
 
 Parse file
 
 - read_file(file_path: str, flatten=False)
+- read_trace_by_trace(flatten=False)
 
 Entropy
 

@@ -1,4 +1,4 @@
-from .file import read_file
+from .file import read_file, read_trace_by_trace, read_DataFrame
 from .entropys import trace_entropy
 from .entropys import prefix_entropy
 from .entropys import k_block_entropy
