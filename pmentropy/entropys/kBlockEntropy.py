@@ -3,6 +3,9 @@ from pmentropy.Node import Node
 import math
 
 def k_block_entropy(logs: tuple[dict[Node], dict], k: int) -> float:
+    """
+    Compute the k block entropy
+    """
     trie, trie_infos = logs
     acc = 0.0
     total_block_count = 0

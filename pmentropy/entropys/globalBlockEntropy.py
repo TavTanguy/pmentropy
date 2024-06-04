@@ -40,6 +40,9 @@ def next_i(args):
     return acc
 
 def global_block_entropy(logs: tuple[dict[Node], dict]) -> float:
+    """
+    Compute the global block entropy
+    """
     trie, trie_infos = logs
     acc = 0.0
     longest_branch = trie_infos["longest_branch"]

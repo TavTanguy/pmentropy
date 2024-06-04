@@ -16,9 +16,15 @@ tests = {
     5: lambda h, k, K, S: K * h < k * pow(2, k * h) * math.log2(S),
 }
 def k_block_entropy_rate_ratio(logs: tuple[dict[Node], dict], c: int):
+    """"
+    Compute the k block entropy rate ratio
+    """
     return kBlockEntropyRate("ratio", logs, c)
 
 def k_block_entropy_rate_diff(logs: tuple[dict[Node], dict], c: int):
+    """
+    Compute the k block entropy rate diff
+    """
     return kBlockEntropyRate("diff", logs, c)
 
 def kBlockEntropyRate(type: str, logs: tuple[dict[Node], dict], c: int):

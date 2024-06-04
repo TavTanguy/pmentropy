@@ -14,6 +14,9 @@ def L(j: int) -> float:
     return L_j
 
 def kNN_entropy(logs: tuple[dict[Node], dict], k: int, p: int) -> float:
+    """
+    Compute the kNN entropy
+    """
     trie, trie_infos = logs
     end_nodes = trie_infos["end_nodes"]
 

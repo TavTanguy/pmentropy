@@ -2,6 +2,9 @@ from pmentropy.Node import Node
 import math
 
 def lempel_ziv_entropy_rate(logs: tuple[dict[Node], dict]):
+    """
+    Compute the Lempel-Ziv entropy rate
+    """
     trie, trie_infos = logs
     words = []
     N = 0

@@ -4,6 +4,9 @@ from pmentropy.kNearestLevenshtein import kNearestLevenshtein
 from pmentropy.Node import Node
 
 def kL_entropy(logs: tuple[dict[Node], dict], p: int) -> float:
+    """
+    Compute the KL entropy
+    """
     trie, trie_infos = logs
     end_nodes = trie_infos["end_nodes"]
     if len(end_nodes) < 2:

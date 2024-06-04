@@ -1,6 +1,9 @@
 from pmentropy.Node import Node
 
 def unique_trace(logs: tuple[dict[Node], dict]):
+    """
+    Compute the unique trace
+    """
     trie, trie_infos = logs
     total_traces = 0
     unique_traces = 0
