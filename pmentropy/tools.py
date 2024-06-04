@@ -1,5 +1,5 @@
 import string
-from pmentropy.Node import Node
+from Node import Node
 
 alphabet = string.ascii_letters + string.digits 
 

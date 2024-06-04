@@ -1,5 +1,5 @@
 import numpy as np
-from pmentropy.tools import minimum
+from tools import minimum
 import multiprocessing
 from Levenshtein import distance
 

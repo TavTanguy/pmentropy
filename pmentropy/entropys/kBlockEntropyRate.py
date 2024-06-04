@@ -1,5 +1,5 @@
-from pmentropy.entropys.kBlockEntropy import k_block_entropy
-from pmentropy.Node import Node
+from entropys.kBlockEntropy import k_block_entropy
+from Node import Node
 import math
 
 def get_rate_ratio(H_k: float, H_k_minus1: float, k: int):

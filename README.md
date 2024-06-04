@@ -1,6 +1,6 @@
 # PMEventropy
 
-Compute in python entropy from process mining describe in Back, C.O., Debois, S. & Slaats, T. Entropy as a Measure of Log Variability. J Data Semant 8, 129–156 (2019). https://doi.org/10.1007/s13740-019-00105-3 ([the article](https://rdcu.be/dJMwH))
+Compute in python entropy for process mining describe in Back, C.O., Debois, S. & Slaats, T. Entropy as a Measure of Log Variability. J Data Semant 8, 129–156 (2019). https://doi.org/10.1007/s13740-019-00105-3 ([the article](https://rdcu.be/dJMwH))
 
 This project is inspired by https://github.com/backco/eventropy
 

@@ -1,6 +1,6 @@
 from pm4py.streaming.importer.xes import importer as xes_importer
-from pmentropy.tools import add_mapping_key, increment_trie, increment_end_trie
-from pmentropy.Node import Node
+from tools import add_mapping_key, increment_trie, increment_end_trie
+from Node import Node
 
 def read_file(file_path: str, flatten=False) -> tuple[dict[Node], dict]:
     """

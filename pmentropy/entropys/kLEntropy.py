@@ -1,7 +1,7 @@
 import numpy as np
 import math
-from pmentropy.kNearestLevenshtein import kNearestLevenshtein
-from pmentropy.Node import Node
+from kNearestLevenshtein import kNearestLevenshtein
+from Node import Node
 
 def kL_entropy(logs: tuple[dict[Node], dict], p: int) -> float:
     trie, trie_infos = logs

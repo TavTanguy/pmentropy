@@ -1,5 +1,5 @@
-from pmentropy.Node import Node
-from pmentropy.kNearestLevenshtein import kNearestLevenshtein
+from Node import Node
+from kNearestLevenshtein import kNearestLevenshtein
 import math
 import numpy as np
 

@@ -1,10 +1,10 @@
-from pmentropy.file import read_file
-from pmentropy.entropys.traceEntropy import trace_entropy
-from pmentropy.entropys.prefixEntropy import prefix_entropy
-from pmentropy.entropys.kBlockEntropy import k_block_entropy
-from pmentropy.entropys.globalBlockEntropy import global_block_entropy
-from pmentropy.entropys.kLEntropy import kL_entropy
-from pmentropy.entropys.kNNEntropy import kNN_entropy
-from pmentropy.entropys.lempelZivEntropyRate import lempel_ziv_entropy_rate
-from pmentropy.entropys.kBlockEntropyRate import k_block_entropy_rate_diff, k_block_entropy_rate_ratio
-from pmentropy.entropys.uniqueTrace import unique_trace
+from file import read_file
+from entropys.traceEntropy import trace_entropy
+from entropys.prefixEntropy import prefix_entropy
+from entropys.kBlockEntropy import k_block_entropy
+from entropys.globalBlockEntropy import global_block_entropy
+from entropys.kLEntropy import kL_entropy
+from entropys.kNNEntropy import kNN_entropy
+from entropys.lempelZivEntropyRate import lempel_ziv_entropy_rate
+from entropys.kBlockEntropyRate import k_block_entropy_rate_diff, k_block_entropy_rate_ratio
+from entropys.uniqueTrace import unique_trace
